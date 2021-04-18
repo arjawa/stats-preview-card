@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #090b1a;
+  min-height: 100vh;
+  font-family: Inter;
+}
+
+.card-container {
+  padding: 70px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 315px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1938;
+  border-radius: 14px;
+}
+@media (min-width: 1200px) {
+  .card {
+    flex-direction: row-reverse;
+    width: 85%;
+  }
+}
+.card__header {
+  border-radius: 14px 14px 0 0;
+  width: 100%;
+  height: 260px;
+  background-image: url("../images/image-header-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+}
+@media (min-width: 1200px) {
+  .card__header {
+    height: 100%;
+    flex: 1 1 0px;
+    border-radius: 0 14px 14px 0;
+  }
+}
+.card__body {
+  padding: 40px 30px;
+}
+@media (min-width: 1200px) {
+  .card__body {
+    height: 100%;
+    flex: 1 1 0px;
+    padding: 85px 75px;
+  }
+}
+.card__title {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.card__title .accent {
+  color: #aa5cdb;
+}
+@media (min-width: 1200px) {
+  .card__title {
+    font-size: 2.55rem;
+    text-align: left;
+  }
+}
+.card__desc {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .card__desc {
+    font-size: 1.15rem;
+    text-align: left;
+  }
+}
+.card__features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .card__features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.card__features-item {
+  margin: 10px 0;
+}
+.card__features h4 {
+  font-size: 1.4rem;
+}
+.card__features p {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  padding: 4px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
